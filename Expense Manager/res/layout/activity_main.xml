@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="245dp"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/bCategory"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/bgraph"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/insert_entries11" />
+
+        <Button
+            android:id="@+id/bMoneySpent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/bgraph"
+            android:layout_alignBottom="@+id/bgraph"
+            android:layout_alignRight="@+id/bShowDeleteMonth"
+            android:background="@drawable/pdf_report" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/bCategory"
+            android:text="Enter Transactions    "
+            android:textSize="12sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/bShowDeleteMonth"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/textView2"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/delete_entries12" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bShowDeleteMonth"
+            android:layout_below="@+id/bCategory"
+            android:text="View/Delete        "
+            android:textSize="12sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bgraph"
+            android:layout_below="@+id/bgraph"
+            android:text="Expense Analysis  "
+            android:textSize="12sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bMoneySpent"
+            android:layout_below="@+id/bMoneySpent"
+            android:text="   Generate Report"
+            android:textSize="12sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/bgraph"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:background="@drawable/pie_chart" />
+    </RelativeLayout>
+
+</ScrollView>
